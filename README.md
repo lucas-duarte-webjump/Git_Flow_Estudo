@@ -16,3 +16,19 @@ O git flow trabalho com dois fluxos de ramificações para registrar o históric
 - Os novos `recursos/feature` do sistemas serão ramificadas da branch de `desenvolvimento`,   quando esse `recurso/feature` é finalizada, podemos unir ela ao seu pai, que é a branch de `desenvolvimento`
 
 ![Example](https://wac-cdn.atlassian.com/dam/jcr:8f00f1a4-ef2d-498a-a2c6-8020bb97902f/03%20Release%20branches.svg?cdnVersion=1675)
+
+----
+
+## Criando ramificações de recursos | Branch Feature
+
+Com o git flow, é mais fácil criar uma branch de release
+
+```bash
+git flow feature start feature_branch
+```
+
+Ao finalizar sua feature podemos fazer o junção/merge com a branch de `desenvolvimento`
+
+```bash
+git flow feature finish feature_branch
+```
